@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Учебный макет минималистичного лендинга для фотографа."
+    >
+    <title>Фотограф — учебный лендинг</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#home" aria-label="На первый экран">[Имя фотографа]</a>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#gallery">Галерея</a>
+        <a href="#about">Обо мне</a>
+        <a href="#prices">Цены</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a class="header-action" href="#contacts">Обсудить съёмку</a>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">[Город] · [Направление съёмки]</p>
+          <h1>Фотографии, в которых остаётся ваша история</h1>
+          <p class="hero-text">
+            [Короткое описание подхода фотографа и того, для кого проводится съёмка]
+          </p>
+          <a class="primary-button" href="#contacts">Узнать свободные даты</a>
+        </div>
+
+        <div class="hero-photo" role="img" aria-label="Место для главной фотографии">
+          <span>[Главная фотография]</span>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <p class="eyebrow">Избранные кадры</p>
+          <h2 id="gallery-title">Галерея</h2>
+          <p>
+            [Здесь будут примеры съёмок фотографа]
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-placeholder" role="img" aria-label="Место для фотографии 1">
+            <span>[Фотография 01]</span>
+          </div>
+          <div class="gallery-placeholder" role="img" aria-label="Место для фотографии 2">
+            <span>[Фотография 02]</span>
+          </div>
+          <div class="gallery-placeholder" role="img" aria-label="Место для фотографии 3">
+            <span>[Фотография 03]</span>
+          </div>
+          <div class="gallery-placeholder" role="img" aria-label="Место для фотографии 4">
+            <span>[Фотография 04]</span>
+          </div>
+          <div class="gallery-placeholder" role="img" aria-label="Место для фотографии 5">
+            <span>[Фотография 05]</span>
+          </div>
+          <div class="gallery-placeholder" role="img" aria-label="Место для фотографии 6">
+            <span>[Фотография 06]</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div class="about-portrait" role="img" aria-label="Место для портрета фотографа">
+          <span>[Портрет фотографа]</span>
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow">Знакомство</p>
+          <h2 id="about-title">Обо мне</h2>
+          <div class="about-text">
+            <p>[Краткий рассказ фотографа о себе и своём подходе к съёмке]</p>
+            <p>[Дополнительный абзац о том, что важно фотографу в работе с людьми]</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="prices-section" id="prices" aria-labelledby="prices-title">
+        <div class="section-heading">
+          <p class="eyebrow">Варианты работы</p>
+          <h2 id="prices-title">Цены</h2>
+          <p>[Здесь будут варианты съёмок и их условия]</p>
+        </div>
+
+        <div class="prices-grid">
+          <article class="price-card">
+            <p class="price-card-number">01</p>
+            <h3>[Название съёмки]</h3>
+            <p class="price-card-details">[Что входит]</p>
+            <p class="price-card-value">[Стоимость]</p>
+          </article>
+          <article class="price-card">
+            <p class="price-card-number">02</p>
+            <h3>[Название съёмки]</h3>
+            <p class="price-card-details">[Что входит]</p>
+            <p class="price-card-value">[Стоимость]</p>
+          </article>
+          <article class="price-card">
+            <p class="price-card-number">03</p>
+            <h3>[Название съёмки]</h3>
+            <p class="price-card-details">[Что входит]</p>
+            <p class="price-card-value">[Стоимость]</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="reviews-section" id="reviews" aria-labelledby="reviews-title">
+        <div class="section-heading">
+          <p class="eyebrow">Впечатления клиентов</p>
+          <h2 id="reviews-title">Отзывы</h2>
+          <p>[Здесь будут отзывы после согласования с клиентами]</p>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review-card">
+            <p class="review-text">[Текст отзыва]</p>
+            <p class="review-author">[Имя клиента]</p>
+          </article>
+          <article class="review-card">
+            <p class="review-text">[Текст отзыва]</p>
+            <p class="review-author">[Имя клиента]</p>
+          </article>
+          <article class="review-card">
+            <p class="review-text">[Текст отзыва]</p>
+            <p class="review-author">[Имя клиента]</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contacts-section" id="contacts" aria-labelledby="contacts-title">
+        <div class="contacts-heading">
+          <p class="eyebrow">Связаться</p>
+          <h2 id="contacts-title">Контакты</h2>
+          <p>[Короткое приглашение обсудить будущую съёмку]</p>
+        </div>
+
+        <address class="contacts-list">
+          <div class="contact-item">
+            <span>Телефон</span>
+            <strong>[Номер телефона]</strong>
+          </div>
+          <div class="contact-item">
+            <span>Электронная почта</span>
+            <strong>[Адрес электронной почты]</strong>
+          </div>
+          <div class="contact-item">
+            <span>Социальные сети</span>
+            <strong>[Ссылки на социальные сети]</strong>
+          </div>
+        </address>
+      </section>
+    </main>
+  </body>
+</html>
+
