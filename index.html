@@ -7,9 +7,24 @@
       name="description"
       content="Учебный лендинг портретного фотографа. Все данные вымышлены."
     />
+    <meta property="og:title" content="Алина Северова — портретный фотограф" />
+    <meta
+      property="og:description"
+      content="Учебный адаптивный лендинг портретного фотографа. Все данные вымышлены."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://workghostuser02.github.io/photographer-landing/"
+    />
+    <meta
+      property="og:image"
+      content="https://workghostuser02.github.io/photographer-landing/images/og-cover.webp"
+    />
     <title>Алина Северова — портретный фотограф</title>
-    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Перейти к содержанию</a>
@@ -36,12 +51,8 @@
         </div>
         <figure class="hero-photo">
           <img
-            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=900&amp;q=82"
-            srcset="
-              https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=480&amp;q=78   480w,
-              https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=900&amp;q=82   900w,
-              https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=1200&amp;q=82 1200w
-            "
+            src="images/hero-900.webp"
+            srcset="images/hero-480.webp 480w, images/hero-900.webp 900w"
             sizes="(max-width: 860px) calc(100vw - 32px), 52vw"
             width="900"
             height="1200"
@@ -68,7 +79,12 @@
         <div class="gallery-grid">
           <figure class="gallery-item tall">
             <img
-              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=700&amp;q=78"
+              src="images/gallery-01-800.webp"
+              srcset="
+                images/gallery-01-480.webp 480w,
+                images/gallery-01-800.webp 800w
+              "
+              sizes="(max-width: 860px) calc(100vw - 32px), 380px"
               width="700"
               height="933"
               alt="Женский портрет у окна"
@@ -78,7 +94,12 @@
           </figure>
           <figure class="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=700&amp;q=78"
+              src="images/gallery-02-800.webp"
+              srcset="
+                images/gallery-02-480.webp 480w,
+                images/gallery-02-800.webp 800w
+              "
+              sizes="(max-width: 860px) calc(100vw - 32px), 380px"
               width="700"
               height="875"
               alt="Мужской портрет крупным планом"
@@ -88,7 +109,12 @@
           </figure>
           <figure class="gallery-item wide">
             <img
-              src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&amp;fit=crop&amp;w=1000&amp;q=78"
+              src="images/gallery-03-800.webp"
+              srcset="
+                images/gallery-03-480.webp 480w,
+                images/gallery-03-800.webp 800w
+              "
+              sizes="(max-width: 860px) calc(100vw - 32px), 380px"
               width="1000"
               height="667"
               alt="Мужской портрет в городской среде"
@@ -98,7 +124,12 @@
           </figure>
           <figure class="gallery-item wide">
             <img
-              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&amp;fit=crop&amp;w=1000&amp;q=78"
+              src="images/gallery-04-800.webp"
+              srcset="
+                images/gallery-04-480.webp 480w,
+                images/gallery-04-800.webp 800w
+              "
+              sizes="(max-width: 860px) calc(100vw - 32px), 380px"
               width="1000"
               height="667"
               alt="Девушка улыбается на фоне природы"
@@ -108,17 +139,27 @@
           </figure>
           <figure class="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&amp;fit=crop&amp;w=700&amp;q=78"
+              src="images/gallery-05-800.webp"
+              srcset="
+                images/gallery-05-480.webp 480w,
+                images/gallery-05-800.webp 800w
+              "
+              sizes="(max-width: 860px) calc(100vw - 32px), 380px"
               width="700"
               height="875"
-              alt="Портрет девушки с естественной улыбкой"
+              alt="Портрет девушки на нейтральном фоне"
               loading="lazy"
               decoding="async"
             />
           </figure>
           <figure class="gallery-item tall">
             <img
-              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&amp;fit=crop&amp;w=700&amp;q=78"
+              src="images/gallery-06-800.webp"
+              srcset="
+                images/gallery-06-480.webp 480w,
+                images/gallery-06-800.webp 800w
+              "
+              sizes="(max-width: 860px) calc(100vw - 32px), 380px"
               width="700"
               height="933"
               alt="Светлый женский портрет"
@@ -132,7 +173,9 @@
       <section class="about-section" id="about" aria-labelledby="about-title">
         <figure class="about-portrait">
           <img
-            src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+            src="images/about-800.webp"
+            srcset="images/about-480.webp 480w, images/about-800.webp 800w"
+            sizes="(max-width: 860px) calc(100vw - 32px), 500px"
             width="800"
             height="1000"
             alt="Демо-портрет фотографа Алины Северовой"
@@ -275,32 +318,36 @@
             </div>
           </address>
         </div>
-        <form
-          class="contact-form"
-          action="#contacts"
-          onsubmit="event.preventDefault()"
-        >
-          <label
-            >Ваше имя<input name="name" autocomplete="name" required
-          /></label>
-          <label
-            >Телефон или Telegram<input
-              name="contact"
-              autocomplete="tel"
-              required
-          /></label>
-          <label
-            >Расскажите о съёмке<textarea
-              name="message"
-              rows="5"
-              required
-            ></textarea>
-          </label>
+        <form class="contact-form" action="#contacts" method="post">
+          <label for="client-name">Ваше имя</label>
+          <input
+            id="client-name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            required
+          />
+          <label for="client-contact">Телефон или Telegram</label>
+          <input
+            id="client-contact"
+            name="contact"
+            type="text"
+            autocomplete="tel"
+            required
+          />
+          <label for="client-message">Расскажите о съёмке</label>
+          <textarea
+            id="client-message"
+            name="message"
+            rows="5"
+            required
+          ></textarea>
           <button type="submit">Отправить запрос</button>
-          <p>
+          <p class="form-note">
             Учебная форма: данные никуда не отправляются. В реальном проекте
             подключается способ получения заявок.
           </p>
+          <p class="form-status" role="status" aria-live="polite"></p>
         </form>
       </section>
     </main>
@@ -309,7 +356,10 @@
       <p>
         © 2026 Алина Северова · демонстрационный проект, все данные вымышлены
       </p>
-      <a href="https://unsplash.com/s/photos/portrait-photography"
+      <a
+        href="https://unsplash.com/s/photos/portrait-photography"
+        target="_blank"
+        rel="noopener noreferrer"
         >Фотографии: Unsplash</a
       >
     </footer>
