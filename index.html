@@ -1,167 +1,317 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Учебный макет минималистичного лендинга для фотографа."
-    >
-    <title>Фотограф — учебный лендинг</title>
-    <link rel="stylesheet" href="styles.css">
+      content="Учебный лендинг портретного фотографа. Все данные вымышлены."
+    />
+    <title>Алина Северова — портретный фотограф</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Перейти к содержанию</a>
     <header class="site-header">
-      <a class="logo" href="#home" aria-label="На первый экран">[Имя фотографа]</a>
-
+      <a class="logo" href="#home">Алина Северова</a>
       <nav class="main-nav" aria-label="Основная навигация">
-        <a href="#gallery">Галерея</a>
-        <a href="#about">Обо мне</a>
-        <a href="#prices">Цены</a>
-        <a href="#reviews">Отзывы</a>
-        <a href="#contacts">Контакты</a>
+        <a href="#gallery">Галерея</a><a href="#about">Обо мне</a
+        ><a href="#prices">Цены</a><a href="#reviews">Отзывы</a
+        ><a href="#contacts">Контакты</a>
       </nav>
-
       <a class="header-action" href="#contacts">Обсудить съёмку</a>
     </header>
 
-    <main>
+    <main id="main">
       <section class="hero" id="home">
         <div class="hero-content">
-          <p class="eyebrow">[Город] · [Направление съёмки]</p>
-          <h1>Фотографии, в которых остаётся ваша история</h1>
+          <p class="eyebrow">Санкт-Петербург · Портреты и истории</p>
+          <h1>Живые фотографии о вас</h1>
           <p class="hero-text">
-            [Короткое описание подхода фотографа и того, для кого проводится съёмка]
+            Помогаю расслабиться перед камерой и сохраняю настоящие эмоции — без
+            сложных поз и долгой подготовки.
           </p>
-          <a class="primary-button" href="#contacts">Узнать свободные даты</a>
+          <a class="primary-button" href="#contacts">Выбрать дату съёмки</a>
         </div>
-
-        <div class="hero-photo" role="img" aria-label="Место для главной фотографии">
-          <span>[Главная фотография]</span>
-        </div>
+        <figure class="hero-photo">
+          <img
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=900&amp;q=82"
+            srcset="
+              https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=480&amp;q=78   480w,
+              https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=900&amp;q=82   900w,
+              https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=1200&amp;q=82 1200w
+            "
+            sizes="(max-width: 860px) calc(100vw - 32px), 52vw"
+            width="900"
+            height="1200"
+            alt="Портрет девушки в мягком естественном свете"
+            fetchpriority="high"
+          />
+          <figcaption>Портретная съёмка · естественный свет</figcaption>
+        </figure>
       </section>
 
-      <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <section
+        class="gallery-section"
+        id="gallery"
+        aria-labelledby="gallery-title"
+      >
         <div class="section-heading">
-          <p class="eyebrow">Избранные кадры</p>
+          <p class="eyebrow">Избранные истории</p>
           <h2 id="gallery-title">Галерея</h2>
           <p>
-            [Здесь будут примеры съёмок фотографа]
+            Портреты, прогулки и камерные истории, в которых важнее всего
+            человек и его настроение.
           </p>
         </div>
-
         <div class="gallery-grid">
-          <div class="gallery-placeholder" role="img" aria-label="Место для фотографии 1">
-            <span>[Фотография 01]</span>
-          </div>
-          <div class="gallery-placeholder" role="img" aria-label="Место для фотографии 2">
-            <span>[Фотография 02]</span>
-          </div>
-          <div class="gallery-placeholder" role="img" aria-label="Место для фотографии 3">
-            <span>[Фотография 03]</span>
-          </div>
-          <div class="gallery-placeholder" role="img" aria-label="Место для фотографии 4">
-            <span>[Фотография 04]</span>
-          </div>
-          <div class="gallery-placeholder" role="img" aria-label="Место для фотографии 5">
-            <span>[Фотография 05]</span>
-          </div>
-          <div class="gallery-placeholder" role="img" aria-label="Место для фотографии 6">
-            <span>[Фотография 06]</span>
-          </div>
+          <figure class="gallery-item tall">
+            <img
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=700&amp;q=78"
+              width="700"
+              height="933"
+              alt="Женский портрет у окна"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=700&amp;q=78"
+              width="700"
+              height="875"
+              alt="Мужской портрет крупным планом"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <figure class="gallery-item wide">
+            <img
+              src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&amp;fit=crop&amp;w=1000&amp;q=78"
+              width="1000"
+              height="667"
+              alt="Мужской портрет в городской среде"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <figure class="gallery-item wide">
+            <img
+              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&amp;fit=crop&amp;w=1000&amp;q=78"
+              width="1000"
+              height="667"
+              alt="Девушка улыбается на фоне природы"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&amp;fit=crop&amp;w=700&amp;q=78"
+              width="700"
+              height="875"
+              alt="Портрет девушки с естественной улыбкой"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <figure class="gallery-item tall">
+            <img
+              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&amp;fit=crop&amp;w=700&amp;q=78"
+              width="700"
+              height="933"
+              alt="Светлый женский портрет"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
         </div>
       </section>
 
       <section class="about-section" id="about" aria-labelledby="about-title">
-        <div class="about-portrait" role="img" aria-label="Место для портрета фотографа">
-          <span>[Портрет фотографа]</span>
-        </div>
-
+        <figure class="about-portrait">
+          <img
+            src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+            width="800"
+            height="1000"
+            alt="Демо-портрет фотографа Алины Северовой"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
         <div class="about-content">
           <p class="eyebrow">Знакомство</p>
           <h2 id="about-title">Обо мне</h2>
           <div class="about-text">
-            <p>[Краткий рассказ фотографа о себе и своём подходе к съёмке]</p>
-            <p>[Дополнительный абзац о том, что важно фотографу в работе с людьми]</p>
+            <p>
+              Меня зовут Алина. Я снимаю людей так, чтобы в кадре оставались не
+              только красивые лица, но и характер, тепло и движение.
+            </p>
+            <p>
+              Перед съёмкой мы обсуждаем идею, одежду и локацию. Во время
+              встречи я подсказываю, что делать, но оставляю пространство для
+              естественных эмоций. Первые фотографии вы получите уже через три
+              дня.
+            </p>
           </div>
+          <p class="about-note">
+            8 лет снимаю истории людей в Санкт-Петербурге
+          </p>
         </div>
       </section>
 
-      <section class="prices-section" id="prices" aria-labelledby="prices-title">
+      <section
+        class="prices-section"
+        id="prices"
+        aria-labelledby="prices-title"
+      >
         <div class="section-heading">
           <p class="eyebrow">Варианты работы</p>
           <h2 id="prices-title">Цены</h2>
-          <p>[Здесь будут варианты съёмок и их условия]</p>
+          <p>
+            Выберите подходящий формат. Перед бронированием мы уточним задачу и
+            закрепим все условия.
+          </p>
         </div>
-
         <div class="prices-grid">
           <article class="price-card">
             <p class="price-card-number">01</p>
-            <h3>[Название съёмки]</h3>
-            <p class="price-card-details">[Что входит]</p>
-            <p class="price-card-value">[Стоимость]</p>
+            <h3>Портрет</h3>
+            <ul>
+              <li>1 час съёмки</li>
+              <li>помощь с образом и локацией</li>
+              <li>40 фотографий в обработке</li>
+            </ul>
+            <p class="price-card-value">12 000 ₽</p>
           </article>
-          <article class="price-card">
-            <p class="price-card-number">02</p>
-            <h3>[Название съёмки]</h3>
-            <p class="price-card-details">[Что входит]</p>
-            <p class="price-card-value">[Стоимость]</p>
+          <article class="price-card featured">
+            <p class="price-card-number">02 · Популярный</p>
+            <h3>История</h3>
+            <ul>
+              <li>до 2 часов съёмки</li>
+              <li>две локации и два образа</li>
+              <li>70 фотографий в обработке</li>
+            </ul>
+            <p class="price-card-value">20 000 ₽</p>
           </article>
           <article class="price-card">
             <p class="price-card-number">03</p>
-            <h3>[Название съёмки]</h3>
-            <p class="price-card-details">[Что входит]</p>
-            <p class="price-card-value">[Стоимость]</p>
+            <h3>Семья</h3>
+            <ul>
+              <li>до 1,5 часов съёмки</li>
+              <li>до пяти участников</li>
+              <li>60 фотографий в обработке</li>
+            </ul>
+            <p class="price-card-value">17 000 ₽</p>
           </article>
         </div>
+        <p class="prices-note">
+          Студия, визажист и печать фотографий оплачиваются отдельно.
+        </p>
       </section>
 
-      <section class="reviews-section" id="reviews" aria-labelledby="reviews-title">
+      <section
+        class="reviews-section"
+        id="reviews"
+        aria-labelledby="reviews-title"
+      >
         <div class="section-heading">
           <p class="eyebrow">Впечатления клиентов</p>
           <h2 id="reviews-title">Отзывы</h2>
-          <p>[Здесь будут отзывы после согласования с клиентами]</p>
+          <p>
+            Несколько слов о том, как проходят съёмки и что остаётся после них.
+          </p>
         </div>
-
         <div class="reviews-grid">
           <article class="review-card">
-            <p class="review-text">[Текст отзыва]</p>
-            <p class="review-author">[Имя клиента]</p>
+            <span aria-hidden="true">“</span>
+            <p>
+              Я впервые чувствовала себя спокойно перед камерой. Алина мягко
+              направляла, и фотографии получились очень живыми.
+            </p>
+            <strong>Мария · портретная съёмка</strong>
           </article>
           <article class="review-card">
-            <p class="review-text">[Текст отзыва]</p>
-            <p class="review-author">[Имя клиента]</p>
+            <span aria-hidden="true">“</span>
+            <p>
+              Дети всё время двигались, но это стало частью истории. Получился
+              тёплый семейный альбом без постановочных улыбок.
+            </p>
+            <strong>Ольга · семейная съёмка</strong>
           </article>
           <article class="review-card">
-            <p class="review-text">[Текст отзыва]</p>
-            <p class="review-author">[Имя клиента]</p>
+            <span aria-hidden="true">“</span>
+            <p>
+              Всё было понятно ещё до встречи: образ, маршрут и сроки. Результат
+              получился именно таким, как мы обсуждали.
+            </p>
+            <strong>Илья · городская история</strong>
           </article>
         </div>
       </section>
 
-      <section class="contacts-section" id="contacts" aria-labelledby="contacts-title">
-        <div class="contacts-heading">
+      <section
+        class="contacts-section"
+        id="contacts"
+        aria-labelledby="contacts-title"
+      >
+        <div class="contacts-copy">
           <p class="eyebrow">Связаться</p>
-          <h2 id="contacts-title">Контакты</h2>
-          <p>[Короткое приглашение обсудить будущую съёмку]</p>
+          <h2 id="contacts-title">Давайте создадим вашу историю</h2>
+          <p>
+            Расскажите о желаемой съёмке и удобных датах. Я отвечу в течение
+            рабочего дня и предложу подходящий формат.
+          </p>
+          <address class="contacts-list">
+            <a href="tel:+79000000000"
+              ><span>Телефон</span><strong>+7 (900) 000-00-00</strong></a
+            ><a href="mailto:hello@alinaseverova.example"
+              ><span>Email</span><strong>hello@alinaseverova.example</strong></a
+            >
+            <div>
+              <span>Социальные сети</span
+              ><strong>VK · Telegram · @alinaseverova.photo</strong>
+            </div>
+          </address>
         </div>
-
-        <address class="contacts-list">
-          <div class="contact-item">
-            <span>Телефон</span>
-            <strong>[Номер телефона]</strong>
-          </div>
-          <div class="contact-item">
-            <span>Электронная почта</span>
-            <strong>[Адрес электронной почты]</strong>
-          </div>
-          <div class="contact-item">
-            <span>Социальные сети</span>
-            <strong>[Ссылки на социальные сети]</strong>
-          </div>
-        </address>
+        <form
+          class="contact-form"
+          action="#contacts"
+          onsubmit="event.preventDefault()"
+        >
+          <label
+            >Ваше имя<input name="name" autocomplete="name" required
+          /></label>
+          <label
+            >Телефон или Telegram<input
+              name="contact"
+              autocomplete="tel"
+              required
+          /></label>
+          <label
+            >Расскажите о съёмке<textarea
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+          </label>
+          <button type="submit">Отправить запрос</button>
+          <p>
+            Учебная форма: данные никуда не отправляются. В реальном проекте
+            подключается способ получения заявок.
+          </p>
+        </form>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p>
+        © 2026 Алина Северова · демонстрационный проект, все данные вымышлены
+      </p>
+      <a href="https://unsplash.com/s/photos/portrait-photography"
+        >Фотографии: Unsplash</a
+      >
+    </footer>
   </body>
 </html>
-
